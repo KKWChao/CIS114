@@ -84,6 +84,15 @@ td {
   width: 24px;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
