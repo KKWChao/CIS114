@@ -29,3 +29,7 @@ You will demonstrate your basic knowledge of HTML and CSS
 - you are not opening the links in different tab/window of the browser (the user should not have tons of tabs/windows opened after navigating your own website, unless you would be opening a link to another website that is not yours) - 1 point
 - your HTML5 and CSS code are valid - 5 points
 - The links are working correctly (from Homework 1 to Homework 2 and from Homework 2 to Homework 1). Navigation looks good (the user will be able to go back to the main page - Homework 1 - without using the back button of the browser) - 2 points
+
+### Asset Credits
+
+Icons8: https://icons8.com/icons/set/open

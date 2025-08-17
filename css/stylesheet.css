@@ -78,12 +78,21 @@ td {
   text-align: left;
 }
 
-hr {
-  background-color: white;
+.button-image {
+  fill: white;
+  height: 24px;
+  width: 24px;
 }
 
 /* FOOTER */
 footer {
   width: 100%;
+  padding: 0 0 2em 0;
   text-align: center;
+}
+
+.footer-img {
+  fill: white;
+  height: 32px;
+  width: 32px;
 }
