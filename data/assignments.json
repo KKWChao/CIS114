@@ -1,0 +1,10 @@
+{
+  "Assignments": [
+    {
+      "name": "Homework 2",
+      "description": "Basic Operaions",
+      "status": 1,
+      "link": "./pages/hw2.html"
+    }
+  ]
+}

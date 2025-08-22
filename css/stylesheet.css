@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
+
   font-family: Inconsolata, monospace;
 }
 
@@ -10,6 +9,14 @@
 
 html {
   height: 100%;
+  background: #1c1c1c;
+  background: radial-gradient(
+    circle,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(18, 18, 18, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
 }
 
 body {
@@ -39,10 +46,11 @@ header {
 
 .nav > li > a {
   text-decoration: none;
+  color: white;
 }
 
 .nav > li > a:hover {
-  color: blue;
+  color: gray;
 }
 
 .header-title {
@@ -58,7 +66,7 @@ section {
   flex: 1;
 }
 
-section > div > h3 {
+section > h3 {
   padding: 0 0 1em 0.1em;
 }
 
@@ -74,8 +82,23 @@ tr {
 
 th,
 td {
-  min-width: 20%;
   text-align: left;
+}
+
+.th-name {
+  width: 20%;
+}
+
+.th-description {
+  width: full;
+}
+
+.th-status {
+  width: 15%;
+}
+
+.th-link {
+  width: 5%;
 }
 
 .button-image {
@@ -102,6 +125,52 @@ footer {
 
 .footer-img {
   fill: white;
-  height: 32px;
-  width: 32px;
+}
+
+/* REUSABLES */
+
+.hover-effect {
+  transition: transform 120ms ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 15px rgba(104, 104, 104, 0.6))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)); /* Glow effect */
+}
+
+.hover-effect:active {
+  transform: scale(0.8);
+}
+
+.link-button {
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  border-radius: 0.25em;
+  color: white;
+  text-decoration: none;
+  background-color: gray;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.link-button:hover {
+  background-color: lightgray;
+}
+
+.link-button:active {
+  background-color: darkgray;
+}
+
+.link-button-effect {
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.link-button-effect:hover {
+  box-shadow: 0 4px 8px 0 rgba(104, 104, 104, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.link-button-effect:active {
+  /* TBA */
 }
