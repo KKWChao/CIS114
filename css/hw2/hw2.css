@@ -59,11 +59,19 @@ input[type="reset"] {
   text-align: center;
 }
 
-#result {
+#result-container {
   width: 30em;
   height: 5em;
   padding: 1em;
   background-color: lightgray;
   color: black;
   border-radius: 1em;
+}
+
+th {
+  width: 20%;
+}
+
+#results-table {
+  width: 100%;
 }

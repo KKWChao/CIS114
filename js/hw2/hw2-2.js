@@ -9,11 +9,15 @@ function submitForm(event) {
 
   let result = document.getElementById("result");
 
-  let td_min = document.getElementById("min").innerHTML;
-  let td_max = document.getElementById("min").innerHTML;
-  let td_sum = document.getElementById("min").innerHTML;
-  let td_mean = document.getElementById("min").innerHTML;
-  let td_product = document.getElementById("min").innerHTML;
+  let td_min = document.getElementById("min");
+  let td_max = document.getElementById("max");
+  let td_sum = document.getElementById("sum");
+  let td_mean = document.getElementById("mean");
+  let td_product = document.getElementById("product");
+
+  let output = [td_min, td_max, td_sum, td_mean, td_product];
+
+  let table_result = document.getElementById("results-table");
 
   if (!isNaN(input1) && !isNaN(input2) && !isNaN(input3)) {
     let results = [];
@@ -39,8 +43,32 @@ function submitForm(event) {
     for (const i of inputs) {
       product *= Number(i);
     }
+
     results.push(min, max, sum, mean, product);
+
+    // for (let i = 0; i < output.length; ++i) {
+    //   output[i].innerHTML = results[i];
+    // }
+
+    table_result.innerHTML = `
+          <tr>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Sum</th>
+            <th>Mean</th>
+            <th>Product</th>
+          </tr>
+          <tr id="results">
+            <td id="min">${min}</td>
+            <td id="max">${max}</td>
+            <td id="sum">${sum}</td>
+            <td id="mean">${mean.toPrecision(3)}</td>
+            <td id="product">${product}</td>
+          </tr>
+    `;
   } else {
     console.log("One of the inputs is a string");
+
+    table_result.innerHTML = "String Detected: Please enter only numbers!";
   }
 }
