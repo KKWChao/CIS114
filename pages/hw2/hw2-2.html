@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta
-      name="Kelvin Chao's Homework 2"
+      name="Kelvin Chao's Homework 2 Part 2"
       content="Kelvin Chao's homework assignments for Javascript/AJAX"
     />
-    <meta name="Homework 2" />
-    <title>Homework 2</title>
+    <meta name="Homework 2 Part 2" />
+    <title>Homework 2 Part 2</title>
     <style></style>
 
     <link
       rel="stylesheet"
-      href="/css/hw2.css"
+      href="/css/hw2/hw2.css"
+      async
     />
     <link
       rel="stylesheet"
       href="/css/stylesheet.css"
+      async
     />
     <link
       rel="icon"
       type="image/x-icon"
       href="/assets/images/favicon.ico"
     />
+    <script src="/js/hw2/hw2-2.js"></script>
   </head>
 
   <body>
@@ -50,12 +53,69 @@
 
     <section>
       <h3>Part 2</h3>
+      <p>
+        Input three numbers to calculate the minimum, <br />35 maximum, sum,
+        mean and product of the inputs
+      </p>
 
-      <div class="part2">
-        <form action="">
-          <label for=""></label>
-          <input type="text" />
-        </form>
+      <form
+        action=""
+        onsubmit="submitForm(event)"
+      >
+        <label for="input_1">Input 1</label><br />
+        <input
+          id="input_1"
+          name="input_1"
+          type="text"
+          required
+        /><br />
+
+        <label for="input_2">Input 2</label><br />
+        <input
+          id="input_2"
+          name="input_2"
+          type="text"
+          required
+        /><br />
+
+        <label for="input_3">Input 3</label><br />
+        <input
+          id="input_3"
+          name="input_3"
+          type="text"
+          required
+        /><br />
+
+        <div id="form-button-container">
+          <input
+            type="reset"
+            value="Clear"
+          />
+          <input
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+
+      <div id="result-container">
+        <h3>Results</h3>
+        <table id="results-table">
+          <!-- <tr>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Sum</th>
+            <th>Mean</th>
+            <th>Product</th>
+          </tr>
+          <tr id="results">
+            <td id="min"></td>
+            <td id="max"></td>
+            <td id="sum"></td>
+            <td id="mean"></td>
+            <td id="product"></td>
+          </tr> -->
+        </table>
       </div>
 
       <div>
@@ -100,5 +160,4 @@
       </div>
     </footer>
   </body>
-  <script src="/js/hw2.js"></script>
 </html>
