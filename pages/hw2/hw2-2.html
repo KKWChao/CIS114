@@ -28,7 +28,11 @@
       type="image/x-icon"
       href="../../assets/images/favicon.ico"
     />
-    <script src="../../js//hw2/hw2-2.js"></script>
+    <script
+      src="../../js//hw2/hw2-2.js"
+      async
+      defer
+    ></script>
   </head>
 
   <body>
@@ -56,11 +60,33 @@
 
     <section>
       <h3>Part 2</h3>
+
       <p>
         Input three numbers to calculate the minimum, <br />35 maximum, sum,
         mean and product of the inputs
       </p>
 
+      <!-- LINKS -->
+      <div>
+        <a
+          href="../../index.html"
+          class="link-button link-button-effect"
+          >Go Home</a
+        >
+        <a
+          href="./hw2.html"
+          class="link-button link-button-effect"
+          >To Part 1</a
+        >
+
+        <a
+          href="./hw2-ec.html"
+          class="link-button link-button-effect"
+          >To Extra Credit</a
+        >
+      </div>
+
+      <!-- Part 2 -->
       <form
         action=""
         onsubmit="submitForm(event)"
@@ -69,7 +95,7 @@
         <input
           id="input_1"
           name="input_1"
-          type="text"
+          type="number"
           required
         /><br />
 
@@ -77,7 +103,7 @@
         <input
           id="input_2"
           name="input_2"
-          type="text"
+          type="number"
           required
         /><br />
 
@@ -85,7 +111,7 @@
         <input
           id="input_3"
           name="input_3"
-          type="text"
+          type="number"
           required
         /><br />
 
@@ -104,25 +130,6 @@
       <div id="result-container">
         <h3>Results</h3>
         <table id="results-table"></table>
-      </div>
-
-      <div>
-        <a
-          href="../../index.html"
-          class="link-button link-button-effect"
-          >Go Home</a
-        >
-        <a
-          href="./hw2.html"
-          class="link-button link-button-effect"
-          >To Part 1</a
-        >
-
-        <a
-          href="./hw2-ec.html"
-          class="link-button link-button-effect"
-          >To Extra Credit</a
-        >
       </div>
     </section>
 

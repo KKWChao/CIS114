@@ -9,7 +9,10 @@ section {
 /* PART 1 */
 
 #part1 {
-  margin-bottom: 2em;
+  margin: 2em 0;
+  padding: 2em;
+  background-color: lightgray;
+  border-radius: 0.5em;
 }
 
 #first_item {
@@ -41,7 +44,7 @@ label {
   margin: 0.5em 0;
 }
 
-input[type="text"] {
+input[type="number"] {
   padding: 10px 20px;
   border-radius: 0.5em;
 }
@@ -60,8 +63,8 @@ input[type="reset"] {
 }
 
 #result-container {
-  width: 30em;
-  height: 5em;
+  width: 80%;
+  height: 10em;
   padding: 1em;
   background-color: lightgray;
   color: black;
@@ -74,4 +77,19 @@ th {
 
 #results-table {
   width: 100%;
+}
+
+/* EXTRA CREDIT */
+#form-ec {
+  width: 80%;
+}
+
+#form-ec > table > thead > tr > th {
+  padding: 1em;
+  border: 2px solid white;
+}
+
+#form-ec > table > tbody > tr > td {
+  padding: 1em;
+  border: 1px solid white;
 }

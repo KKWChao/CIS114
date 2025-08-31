@@ -5,7 +5,7 @@ function submitForm(event) {
   let input2 = document.getElementById("input_2").value;
   let input3 = document.getElementById("input_3").value;
 
-  const inputs = [input1, input2, input3];
+  const inputs = [parseInt(input1), parseInt(input2), parseInt(input3)];
 
   let result = document.getElementById("result");
 
@@ -49,6 +49,8 @@ function submitForm(event) {
     // for (let i = 0; i < output.length; ++i) {
     //   output[i].innerHTML = results[i];
     // }
+
+    console.log(parseInt(input1));
 
     table_result.innerHTML = `
           <tr>
