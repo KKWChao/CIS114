@@ -2,8 +2,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
-  gap: 1em;
+  /* align-items: center; */
+  gap: 0.5em;
 }
 
 /* PART 1 */
@@ -13,6 +13,7 @@ section {
   padding: 2em;
   background-color: lightgray;
   border-radius: 0.5em;
+  width: fit-content;
 }
 
 #first_item {
@@ -32,12 +33,19 @@ section {
 }
 
 /* PART 2 */
+.hw2-flex-container {
+  margin-top: 2em;
+  display: flex;
+  gap: 2em;
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 0.5em; */
+  gap: 0.5em;
+  width: 20%;
 }
 
 label {
@@ -47,6 +55,7 @@ label {
 input[type="number"] {
   padding: 10px 20px;
   border-radius: 0.5em;
+  width: 80%;
 }
 
 #form-button-container {
@@ -58,30 +67,34 @@ input[type="reset"] {
   padding: 0.4em 0.8em;
 }
 
-#result-container > h3 {
-  text-align: center;
-}
-
-#result-container {
+#hw2-2-result-container {
   width: 80%;
-  height: 10em;
   padding: 1em;
   background-color: lightgray;
   color: black;
   border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
-th {
+#hw2-2-results-table {
   width: 20%;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-#results-table {
+#hw2-2-results-table {
   width: 100%;
 }
 
 /* EXTRA CREDIT */
+
 #form-ec {
-  width: 80%;
+  width: 60%;
+  margin-top: 2em;
 }
 
 #form-ec > table > thead > tr > th {
@@ -92,4 +105,41 @@ th {
 #form-ec > table > tbody > tr > td {
   padding: 1em;
   border: 1px solid white;
+}
+
+#hw2-ec-currency {
+  width: 30%;
+}
+
+#hw2-ec-rate {
+  width: 30%;
+}
+
+#hw2-ec-value {
+  width: 40%;
+  text-align: right;
+}
+
+.hw2-ec-results {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1em;
+  text-align: right;
+}
+
+#usd {
+  text-align: right;
+  font-size: 1em;
+}
+
+#usd:focus {
+  outline: none;
+  border: 2px solid green;
+}
+
+#hw2-ec-result-text {
+  font-weight: bolder;
 }

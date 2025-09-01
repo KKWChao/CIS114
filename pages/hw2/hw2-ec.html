@@ -51,124 +51,141 @@
           <li>
             <a href="https://github.com/KKWChao/CIS114">Github</a>
           </li>
-          <li>
-            <a href="https://kkchao.com/">Website</a>
-          </li>
         </ul>
       </div>
     </header>
 
     <section>
-      <h3>Extra Credit</h3>
+      <div class="flex-column">
+        <h3>Homework 2 Extra Credit</h3>
 
-      <p>2024 Exchange Rate Converter</p>
+        <p>2024 Exchange Rate Converter</p>
 
-      <!-- LINKS -->
-      <div>
-        <a
-          href="../../index.html"
-          class="link-button link-button-effect"
-          >Go Home</a
-        >
-        <a
-          href="./hw2.html"
-          class="link-button link-button-effect"
-          >To Part 1</a
-        >
+        <!-- LINKS -->
+        <div>
+          <a
+            href="../../index.html"
+            class="link-button link-button-effect"
+            >Go Home</a
+          >
+          <a
+            href="./hw2.html"
+            class="link-button link-button-effect"
+            >To Part 1</a
+          >
 
-        <a
-          href="./hw2-2.html"
-          class="link-button link-button-effect"
-          >To Part 2</a
-        >
+          <a
+            href="./hw2-2.html"
+            class="link-button link-button-effect"
+            >To Part 2</a
+          >
+        </div>
       </div>
 
       <!-- EC -->
-      <form
-        action=""
-        id="form-ec"
-      >
-        <table>
-          <thead>
-            <tr>
-              <th class="text-left">Currency</th>
-              <th>Rate</th>
-              <th>Value</th>
-            </tr>
-          </thead>
+      <div class="flex-column-center">
+        <form
+          action=""
+          id="form-ec"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th
+                  id="hw2-ec-currency"
+                  class="text-left"
+                >
+                  Currency
+                </th>
+                <th id="hw2-ec-rate">Rate</th>
+                <th id="hw2-ec-value">Value</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Euro</td>
-              <td class="text-center">0.92</td>
-              <td>
-                <input
-                  type="text"
-                  name="euro-usd"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Candian Dollar</td>
-              <td class="text-center">1.38</td>
-              <td>
-                <input
-                  type="text"
-                  name="cad-usd"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Hong Kong Dollar</td>
-              <td class="text-center">7.81</td>
-              <td>
-                <input
-                  type="text"
-                  name="hkd-usd"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Japanese Yen</td>
-              <td class="text-center">156.73</td>
-              <td>
-                <input
-                  type="text"
-                  name="jpy-usd"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Mexican Peso</td>
-              <td class="text-center">18.41</td>
-              <td>
-                <input
-                  type="text"
-                  name="mxn-usd"
-                  disabled
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Enter Amount of U.S. Dollars</td>
-              <td></td>
-              <td>
-                <input
-                  id="usd"
-                  type="number"
-                /><input
-                  type="submit"
-                  value="Submit"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
+            <tbody>
+              <tr>
+                <td>Euro</td>
+                <td>0.92</td>
+                <td>
+                  <input
+                    id="hw2-ec-result-euro"
+                    class="hw2-ec-results"
+                    type="text"
+                    name="euro-usd"
+                    disabled
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Candian Dollar</td>
+                <td>1.38</td>
+                <td>
+                  <input
+                    id="hw2-ec-result-cad"
+                    type="text"
+                    class="hw2-ec-results"
+                    name="cad-usd"
+                    disabled
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Hong Kong Dollar</td>
+                <td>7.81</td>
+                <td>
+                  <input
+                    id="hw2-ec-result-hkd"
+                    type="text"
+                    class="hw2-ec-results"
+                    name="hkd-usd"
+                    disabled
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Japanese Yen</td>
+                <td>156.73</td>
+                <td>
+                  <input
+                    id="hw2-ec-result-jpy"
+                    type="text"
+                    class="hw2-ec-results"
+                    name="jpy-usd"
+                    disabled
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Mexican Peso</td>
+                <td>18.41</td>
+                <td>
+                  <input
+                    id="hw2-ec-result-mxn"
+                    type="text"
+                    class="hw2-ec-results"
+                    name="mxn-usd"
+                    disabled
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  colspan="2"
+                  id="hw2-ec-result-text"
+                >
+                  Enter Amount of U.S. Dollars
+                </td>
+                <td>
+                  <input
+                    id="usd"
+                    type="number"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
     </section>
 
     <footer>

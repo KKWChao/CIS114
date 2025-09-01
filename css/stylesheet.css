@@ -17,6 +17,21 @@ html {
     rgba(0, 0, 0, 1) 100%
   );
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  animation: breathe 6s ease-in-out infinite;
+  color: white;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 120%;
+  }
 }
 
 body {
@@ -70,17 +85,20 @@ section {
   padding: 0 0 1em 0.1em;
 }
 
-.full-table {
-  border: 0.15em dotted white;
-  padding: 0.25em;
+thead {
 }
 
 table,
 tr {
   width: 100%;
+  border-collapse: collapse;
 }
 
-.full-table thead > tr > th {
+thead th {
+  border-bottom: 0.15em dotted white;
+}
+
+thead > tr {
   text-align: left;
 }
 
@@ -180,4 +198,18 @@ footer {
 
 .text-left {
   text-align: left;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
 }

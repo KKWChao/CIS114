@@ -17,7 +17,7 @@ function submitForm(event) {
 
   let output = [td_min, td_max, td_sum, td_mean, td_product];
 
-  let table_result = document.getElementById("results-table");
+  let table_result = document.getElementById("hw2-2-results-table");
 
   if (!isNaN(input1) && !isNaN(input2) && !isNaN(input3)) {
     let results = [];
@@ -53,6 +53,7 @@ function submitForm(event) {
     console.log(parseInt(input1));
 
     table_result.innerHTML = `
+
           <tr>
             <th>Min</th>
             <th>Max</th>
@@ -60,6 +61,7 @@ function submitForm(event) {
             <th>Mean</th>
             <th>Product</th>
           </tr>
+
           <tr id="results">
             <td id="min">${min}</td>
             <td id="max">${max}</td>
@@ -67,6 +69,7 @@ function submitForm(event) {
             <td id="mean">${mean.toPrecision(3)}</td>
             <td id="product">${product}</td>
           </tr>
+
     `;
   } else {
     console.log("One of the inputs is a string");

@@ -59,77 +59,80 @@
     </header>
 
     <section>
-      <h3>Part 2</h3>
+      <div class="flex-column">
+        <h3>Homework 2 Part 2</h3>
 
-      <p>
-        Input three numbers to calculate the minimum, <br />35 maximum, sum,
-        mean and product of the inputs
-      </p>
+        <p>
+          Input three numbers to calculate the minimum, <br />35 maximum, sum,
+          mean and product of the inputs
+        </p>
 
-      <!-- LINKS -->
-      <div>
-        <a
-          href="../../index.html"
-          class="link-button link-button-effect"
-          >Go Home</a
-        >
-        <a
-          href="./hw2.html"
-          class="link-button link-button-effect"
-          >To Part 1</a
-        >
+        <!-- LINKS -->
+        <div>
+          <a
+            href="../../index.html"
+            class="link-button link-button-effect"
+            >Go Home</a
+          >
+          <a
+            href="./hw2.html"
+            class="link-button link-button-effect"
+            >To Part 1</a
+          >
 
-        <a
-          href="./hw2-ec.html"
-          class="link-button link-button-effect"
-          >To Extra Credit</a
-        >
-      </div>
-
-      <!-- Part 2 -->
-      <form
-        action=""
-        onsubmit="submitForm(event)"
-      >
-        <label for="input_1">Input 1</label><br />
-        <input
-          id="input_1"
-          name="input_1"
-          type="number"
-          required
-        /><br />
-
-        <label for="input_2">Input 2</label><br />
-        <input
-          id="input_2"
-          name="input_2"
-          type="number"
-          required
-        /><br />
-
-        <label for="input_3">Input 3</label><br />
-        <input
-          id="input_3"
-          name="input_3"
-          type="number"
-          required
-        /><br />
-
-        <div id="form-button-container">
-          <input
-            type="reset"
-            value="Clear"
-          />
-          <input
-            type="submit"
-            value="Submit"
-          />
+          <a
+            href="./hw2-ec.html"
+            class="link-button link-button-effect"
+            >To Extra Credit</a
+          >
         </div>
-      </form>
+      </div>
+      <!-- Part 2 -->
+      <div class="hw2-flex-container">
+        <form
+          action=""
+          onsubmit="submitForm(event)"
+        >
+          <label for="input_1">Input 1</label><br />
+          <input
+            id="input_1"
+            name="input_1"
+            type="number"
+            required
+          /><br />
 
-      <div id="result-container">
-        <h3>Results</h3>
-        <table id="results-table"></table>
+          <label for="input_2">Input 2</label><br />
+          <input
+            id="input_2"
+            name="input_2"
+            type="number"
+            required
+          /><br />
+
+          <label for="input_3">Input 3</label><br />
+          <input
+            id="input_3"
+            name="input_3"
+            type="number"
+            required
+          /><br />
+
+          <div id="form-button-container">
+            <input
+              type="reset"
+              value="Clear"
+            />
+            <input
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+
+        <div id="hw2-2-result-container">
+          <h2>Results</h2>
+          <table id="hw2-2-results-table"></table>
+        </div>
       </div>
     </section>
 
