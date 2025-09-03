@@ -1,6 +1,6 @@
 async function loadData() {
   try {
-    const res = await fetch("../data/assignments.json");
+    const res = await fetch("./data/assignments.json");
 
     if (!res.ok) {
       throw new Error("Bad Response");
