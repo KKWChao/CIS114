@@ -1,10 +1,33 @@
-{
-  "Assignments": [
-    {
-      "name": "Homework 2",
-      "description": "Basic Operaions",
-      "status": 1,
-      "link": "./pages/hw2.html"
-    }
-  ]
-}
+[
+  {
+    "name": "Homework 2",
+    "description": "Basic Operaions and Currency Conversion",
+    "status": 0,
+    "parts": [
+      {
+        "name": "Part 1",
+        "description": "Basic Operaions - Styling",
+        "status": 0,
+        "link": "./pages/hw2/hw2.html"
+      },
+      {
+        "name": "Part 2",
+        "description": "Basic Operaions - Math",
+        "status": 0,
+        "link": "./pages/hw2/hw2-2.html"
+      },
+      {
+        "name": "Extra Credit",
+        "description": "2024 Currency Conversion",
+        "status": 0,
+        "link": "./pages/hw2/hw2-ec.html"
+      }
+    ]
+  },
+  {
+    "name": "Homework 3",
+    "description": "TBA",
+    "status": 2,
+    "parts": []
+  }
+]

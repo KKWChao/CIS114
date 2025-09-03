@@ -9,29 +9,15 @@
 
 html {
   height: 100%;
-  background: #1c1c1c;
-  background: radial-gradient(
+  background: black;
+  /* background: radial-gradient(
     circle,
     rgba(28, 28, 28, 1) 0%,
     rgba(18, 18, 18, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
+  background: linear-gradient() */
   color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  animation: breathe 6s ease-in-out infinite;
-  color: white;
-}
-
-@keyframes breathe {
-  0%,
-  100% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 120% 120%;
-  }
 }
 
 body {
@@ -85,17 +71,14 @@ section {
   padding: 0 0 1em 0.1em;
 }
 
-thead {
-}
-
-table,
-tr {
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
 thead th {
   border-bottom: 0.15em dotted white;
+  padding-bottom: 0.5em;
 }
 
 thead > tr {
@@ -115,7 +98,15 @@ thead > tr {
 }
 
 .th-link {
-  width: 5%;
+  width: 20%;
+}
+
+/* needed for table spacing */
+#table-body:before {
+  content: "-";
+  display: block;
+  line-height: 0.5em;
+  visibility: hidden;
 }
 
 .button-image {

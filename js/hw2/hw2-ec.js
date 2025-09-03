@@ -1,4 +1,5 @@
 const rates = [0.92, 1.38, 7.81, 156.73, 18.41];
+
 let euro_usd = document.getElementById("hw2-ec-result-euro");
 let cad_usd = document.getElementById("hw2-ec-result-cad");
 let hkd_usd = document.getElementById("hw2-ec-result-hkd");
