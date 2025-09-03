@@ -52,6 +52,7 @@ label {
   margin: 0.5em 0;
 }
 
+input[type="text"],
 input[type="number"] {
   padding: 10px 20px;
   border-radius: 0.5em;
@@ -138,6 +139,7 @@ input[type="reset"] {
 #usd:focus {
   outline: none;
   border: 2px solid green;
+  background-color: lightgreen;
 }
 
 #hw2-ec-result-text {

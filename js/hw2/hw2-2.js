@@ -1,3 +1,13 @@
+function validateInput(input, label) {
+  if (input.trim() === "") {
+    return `${label} is missing!<br>`;
+  } else if (isNaN(parseInt(input))) {
+    return `${label} is a string!<br>`;
+  }
+
+  return "";
+}
+
 function submitForm(event) {
   event.preventDefault();
 
@@ -7,19 +17,22 @@ function submitForm(event) {
 
   const inputs = [parseInt(input1), parseInt(input2), parseInt(input3)];
 
-  let result = document.getElementById("result");
-
   let td_min = document.getElementById("min");
   let td_max = document.getElementById("max");
   let td_sum = document.getElementById("sum");
   let td_mean = document.getElementById("mean");
   let td_product = document.getElementById("product");
 
-  let output = [td_min, td_max, td_sum, td_mean, td_product];
-
   let table_result = document.getElementById("hw2-2-results-table");
 
-  if (!isNaN(input1) && !isNaN(input2) && !isNaN(input3)) {
+  if (
+    input1 !== "" &&
+    !isNaN(input1) &&
+    input2 !== "" &&
+    !isNaN(input2) &&
+    input3 !== "" &&
+    !isNaN(input3)
+  ) {
     let results = [];
     let min,
       max,
@@ -72,8 +85,12 @@ function submitForm(event) {
 
     `;
   } else {
-    console.log("One of the inputs is a string");
+    let output = ``;
 
-    table_result.innerHTML = "String Detected: Please enter only numbers!";
+    output += validateInput(input1, "Input 1");
+    output += validateInput(input2, "Input 2");
+    output += validateInput(input3, "Input 3");
+
+    table_result.innerHTML = output;
   }
 }

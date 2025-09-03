@@ -67,6 +67,8 @@ section {
   flex: 1;
 }
 
+/* TABLE */
+
 .table-header {
   padding: 0 0 1em 0.1em;
 }
@@ -101,27 +103,28 @@ thead > tr {
   width: 20%;
 }
 
+.table-spacer {
+  height: 0.25em;
+}
+
+.assignment-link {
+  text-decoration: none;
+  color: green;
+}
+
+.assignment-link:active {
+  color: darkgreen;
+}
+
+.assignment-link:hover {
+  color: darkgreen;
+}
 /* needed for table spacing */
 #table-body:before {
   content: "-";
   display: block;
   line-height: 0.5em;
   visibility: hidden;
-}
-
-.button-image {
-  fill: white;
-  height: 24px;
-  width: 24px;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
 }
 
 /* FOOTER */
@@ -203,4 +206,19 @@ footer {
   gap: 1em;
   align-items: center;
   justify-content: center;
+}
+
+.button-image {
+  fill: white;
+  height: 24px;
+  width: 24px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 }
