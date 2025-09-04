@@ -70,7 +70,7 @@ section {
 #assignment-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 0.2em;
+  border-spacing: 0 0.5em;
 }
 
 thead th {
@@ -98,6 +98,14 @@ thead > tr {
   width: 15%;
 }
 
+.file-icon {
+  color: white;
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
 .assignment-link {
   text-decoration: none;
   color: green;
@@ -109,14 +117,6 @@ thead > tr {
 
 .assignment-link:hover {
   color: darkgreen;
-}
-
-/* needed for table spacing */
-#table-body:before {
-  content: "-";
-  display: block;
-  line-height: 0.5em;
-  visibility: hidden;
 }
 
 .table-spacer {
@@ -185,10 +185,9 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(104, 104, 104, 0.2),
     0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
+/* TBA */
 
-.link-button-effect:active {
-  /* TBA */
-}
+/* .link-button-effect:active {} */
 
 .text-center {
   text-align: center;

@@ -22,23 +22,28 @@
   },
   {
     "name": "Homework 3",
-    "description": "",
+    "description": "Functions",
     "parts": [
       {
         "name": "Part 1",
-        "description": "",
-        "link": ""
+        "description": "Student Grades",
+        "link": "./pages/hw3/hw3-1.html"
       },
       {
         "name": "Part 2",
-        "description": "",
-        "link": ""
+        "description": "Company ...",
+        "link": "./pages/hw3/hw3-2.html"
       },
       {
         "name": "Extra Credit",
         "description": "",
-        "link": ""
+        "link": "./pages/hw3/hw3-ec.html"
       }
     ]
+  },
+  {
+    "name": "Homework 4",
+    "description": "",
+    "parts": []
   }
 ]
