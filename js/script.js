@@ -29,7 +29,16 @@ async function loadData() {
             ${item.name}
           </td>
           <td>${item.description ? item.description : "TBA"}</td>
-          <td></td>
+          <td>${
+            item.link
+              ? `<a
+                href="${item.link}"
+                class='assignment-link'
+              >
+                ${item.name}
+              </a>`
+              : ""
+          }</td>
         </tr>
         `;
 

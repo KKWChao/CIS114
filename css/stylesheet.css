@@ -95,7 +95,7 @@ thead > tr {
 }
 
 .th-link {
-  width: 15%;
+  width: 20%;
 }
 
 .file-icon {
@@ -219,9 +219,40 @@ footer {
 
 .flex {
   display: flex;
+  gap: 8em;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
   flex-direction: column;
   gap: 2em;
   justify-content: center;
   align-items: center;
   height: 90%;
+}
+
+.section-center {
+  width: 50%;
+}
+
+.section-item-container {
+  width: 100%;
+}
+
+.section-item {
+  border: 1px solid white;
+  width: 25%;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0.5em 0.5em lightgray;
+}
+
+.section-item > p {
+  padding: 2em;
+  line-height: 3em;
 }

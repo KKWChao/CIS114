@@ -21,7 +21,7 @@ document.write(`
 
   <section>
     <div class="flex-column">
-      <h3>Homework 2 Part 1</h3>
+      <h2>Homework 2 Part 1</h2>
       <p>Basic Operations</p>
 
       <!-- LINKS -->
