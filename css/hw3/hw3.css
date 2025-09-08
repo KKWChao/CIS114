@@ -1,0 +1,47 @@
+/* HW 3 CSS */
+.section-left,
+.section-right {
+  display: flex;
+}
+
+form {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.4em 0.8em;
+  border-radius: 0;
+  background-color: white;
+}
+
+input[type="text"] {
+  margin-top: 0.25em;
+  padding: 0.5em 1em;
+  text-align: center;
+  width: 30%;
+}
+
+.form-buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#hw-1-result {
+  color: white;
+}
+
+.result-pane {
+  flex-basis: 60%;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  flex-basis: 10%;
+}

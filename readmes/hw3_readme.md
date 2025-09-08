@@ -9,7 +9,7 @@
   - hyperlink to Extra credit (if you will develop it) with a short description about what will be presented
   - hyperlink to go back to the main page of the course (Homework 1)
 
-# DO NOT USE ALERT BOX FOR ANY ERROR MESSAGES!!
+## DO NOT USE ALERT BOX FOR ANY ERROR MESSAGES!!
 
 ## For Part 1:
 

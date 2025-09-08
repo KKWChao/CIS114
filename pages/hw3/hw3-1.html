@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../css/hw3/hw3.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script src="../../js/hw3/hw3.js"></script>
+  <script src="../../js/hw3/hw3.js" async></script>
 </head>
 
 <body>
@@ -32,16 +32,18 @@
   </header>
 
   <section>
+    <!-- SECTION HEADER -->
+
     <div class="flex">
+      <!-- LEFT SECTION -->
       <div class="section-left">
-        <a href="../../index.html" class="link-button link-button-effect section-links">Go Home</a>
+        <a href="./index.html" class="link-button link-button-effect">Go Home</a>
       </div>
 
-
+      <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
         <h2>Student Grades</h2>
 
-        <!-- DESCRIPTION -->
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequuntur, error, vero rerum, nesciunt neque
           incidunt voluptas nam voluptate quos hic cumque ab illo aliquam nihil! Dolore nisi repellat ratione.
@@ -49,33 +51,72 @@
       </div>
 
 
-      <!-- LINKS -->
+      <!-- RIGHT SECTION -->
 
       <div class="section-right">
         <a href="./hw3-2.html" class="link-button link-button-effect">To Part 2</a>
       </div>
     </div>
 
-    <div>
+    <!-- PART 1 -->
+    <div class="flex">
 
-      <form>
+      <!-- FORM -->
+      <form onsubmit="calcFinalAvg(event)">
         <label for="hwAvg">Homework Average</label><br>
-        <input id="hwAvg" type="text" name="hwAvg"><br>
+        <input id="hwAvg" type="text" name="hwAvg" min="0" max="100"><br>
         <br>
         <label for="participation">Participation</label><br>
-        <input id="participation" type="text" name="participation"><br>
+        <input id="participation" type="text" name="participation" min="0" max="100"><br>
         <br>
         <label for="midterm">Midterm Exam</label><br>
-        <input id="midterm" type="text" name="midterm"><br>
+        <input id="midterm" type="text" name="midterm" min="0" max="100"><br>
         <br>
         <label for="final">Final Exam</label><br>
-        <input id="final" type="text" name="final"><br>
+        <input id="final" type="text" name="final" min="0" max="100"><br>
         <br>
-        <div>
+        <div class="form-buttons">
           <input type="reset" name="reset" value="Clear">
           <input type="submit" name="submit" value="Submit">
         </div>
       </form>
+
+      <!-- RESULT -->
+      <div class="result-pane">
+        <p id="hw-1-result"></p>
+      </div>
+
+
+      <table id="grade-table">
+        <thead>
+          <tr>
+            <th>Percentage</th>
+            <th>Letter Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>90 - 100</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>80 - 89</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>70 - 79</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>60 - 69</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>5- - 59</td>
+            <td>F</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
   </section>
@@ -91,7 +132,7 @@
         </svg>
       </a>
     </div>
-    ⓒ Kelvin Chao
+    <p>ⓒ Kelvin Chao</p>
   </footer>
 </body>
 

@@ -50,6 +50,6 @@ document.write(`
         </svg>
       </a>
     </div>
-        ⓒ Kelvin Chao
+    <p>ⓒ Kelvin Chao</p>
   </footer>
 </body>`);
