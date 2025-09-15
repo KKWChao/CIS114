@@ -78,9 +78,21 @@ table {
 
 #commisions-form {
   align-items: normal;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 #commisions-table {
-  flex-basis: 50%;
+  flex-basis: 40%;
+}
+
+th,
+td {
+  padding: 0.25em;
+}
+
+tbody {
+}
+
+.bold {
+  font-weight: bold;
 }

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../css/hw3/hw3.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script src="../../js/hw3/hw3.js"></script>
+  <script src="../../js/hw3/hw3-2.js"></script>
 </head>
 
 
@@ -47,8 +47,7 @@
         <h2>Sales Commisions</h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad molestiae exercitationem pariatur
-          dolorum porro ab quaerat nulla nemo! Quaerat odit iste id fugiat, praesentium atque maiores nam sed nesciunt!
+          Sales commision calculator based on amount of items sold
         </p>
       </div>
 
@@ -59,30 +58,32 @@
       </div>
     </div>
 
+    <!-- MAIN SECTION -->
     <div class="flex">
-      <form id="commisions-form">
+      <!-- INPUT FORM -->
+      <form id="commisions-form" onsubmit="calcCommisions(event)">
         <h2>Commissions</h2>
-        <p>
+        <!-- <p>
           <label for="seller-name">Seller's Name:</label>
           <input type="text" name="seller-name">
-        </p>
+        </p> -->
         For each item type the quntity sold by the seller
         <ul class="list-decoration-none">
           <li>
             <label for="item-1">Item 1: </label>
-            <input type="text" name="item-1">
+            <input type="number" name="item-1" id="item1">
           </li>
           <li>
             <label for="item-2">Item 2: </label>
-            <input type="text" name="item-2">
+            <input type="number" name="item-2" id="item2">
           </li>
           <li>
             <label for="item-3">Item 3: </label>
-            <input type="text" name="item-3">
+            <input type="number" name="item-3" id="item3">
           </li>
           <li>
             <label for="item-4">Item 4: </label>
-            <input type="text" name="item-4">
+            <input type="number" name="item-4" id="item4">
           </li>
         </ul>
         <div>
@@ -92,6 +93,7 @@
 
       </form>
 
+      <!-- RESULTS TABLE -->
       <table id="commisions-table">
         <thead>
           <tr>
@@ -105,36 +107,39 @@
           <tr>
             <td>1</td>
             <td>$20.99</td>
-            <td></td>
-            <td></td>
+            <td id="qtyItem1"></td>
+            <td id="totalItem1"></td>
           </tr>
           <tr>
             <td>2</td>
             <td>$12.75</td>
-            <td></td>
-            <td></td>
+            <td id="qtyItem2"></td>
+            <td id="totalItem2"></td>
           </tr>
           <tr>
             <td>3</td>
             <td>$9.95</td>
-            <td></td>
-            <td></td>
+            <td id="qtyItem3"></td>
+            <td id="totalItem3"></td>
           </tr>
           <tr>
             <td>4</td>
             <td>$35.89</td>
-            <td></td>
-            <td></td>
+            <td id="qtyItem4"></td>
+            <td id="totalItem4"></td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="3">Total Amount Sold</td>
-            <td>test</td>
+            <td colspan="4" style="border-top: 1px solid white; height: 1px;"></td>
           </tr>
           <tr>
-            <td colspan="3">Total Weekly Earnings</td>
-            <td></td>
+            <td colspan="3" class="bold">Total Amount Sold</td>
+            <td id="total-amount-sold"></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="bold">Total Weekly Earnings</td>
+            <td id="total-weekly-earnings"></td>
           </tr>
         </tfoot>
       </table>
