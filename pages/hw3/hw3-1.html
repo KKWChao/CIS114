@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../css/hw3/hw3.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script src="../../js/hw3/hw3.js" async></script>
+  <script src="../../js/hw3/hw3.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
     <div class="flex">
       <!-- LEFT SECTION -->
       <div class="section-left">
-        <a href="./index.html" class="link-button link-button-effect">Go Home</a>
+        <a href="./index.html" class="link-button link-button-effect">Homework 3</a>
       </div>
 
       <!-- SECTION TITLE AND DESCRIPTION -->
@@ -45,21 +45,20 @@
         <h2>Student Grades</h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequuntur, error, vero rerum, nesciunt neque
-          incidunt voluptas nam voluptate quos hic cumque ab illo aliquam nihil! Dolore nisi repellat ratione.
+          Student grade calculator that takes in homework average, participation, midterm exam score, and the final exam
+          score to calculate the final grade.
         </p>
       </div>
 
 
       <!-- RIGHT SECTION -->
-
       <div class="section-right">
-        <a href="./hw3-2.html" class="link-button link-button-effect">To Part 2</a>
+        <a href="./hw3-2.html" class="link-button link-button-effect">Part 2</a>
       </div>
     </div>
 
     <!-- PART 1 -->
-    <div class="flex">
+    <div class="flex-container">
 
       <!-- FORM -->
       <form onsubmit="calcFinalAvg(event)">
@@ -82,41 +81,8 @@
       </form>
 
       <!-- RESULT -->
-      <div class="result-pane">
-        <p id="hw-1-result"></p>
+      <div id="hw1-result" class="result-pane">
       </div>
-
-
-      <table id="grade-table">
-        <thead>
-          <tr>
-            <th>Percentage</th>
-            <th>Letter Grade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>90 - 100</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>80 - 89</td>
-            <td>B</td>
-          </tr>
-          <tr>
-            <td>70 - 79</td>
-            <td>C</td>
-          </tr>
-          <tr>
-            <td>60 - 69</td>
-            <td>D</td>
-          </tr>
-          <tr>
-            <td>5- - 59</td>
-            <td>F</td>
-          </tr>
-        </tbody>
-      </table>
 
     </div>
   </section>

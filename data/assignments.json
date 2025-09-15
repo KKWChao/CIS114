@@ -1,16 +1,16 @@
 [
   {
     "name": "Homework 2",
-    "description": "Basic Operaions and Currency Conversion",
+    "description": "Basic Operations and Currency Conversion",
     "parts": [
       {
         "name": "Part 1",
-        "description": "Basic Operaions - Styling",
+        "description": "Basic Operations - Styling",
         "link": "./pages/hw2/hw2.html"
       },
       {
         "name": "Part 2",
-        "description": "Basic Operaions - Math",
+        "description": "Basic Operations - Math",
         "link": "./pages/hw2/hw2-2.html"
       },
       {
@@ -27,17 +27,17 @@
     "parts": [
       {
         "name": "Part 1",
-        "description": "Student Grades",
+        "description": "Student Grades Calculator",
         "link": "./pages/hw3/hw3-1.html"
       },
       {
         "name": "Part 2",
-        "description": "Company ...",
+        "description": "Sales Commisions Calculator",
         "link": "./pages/hw3/hw3-2.html"
       },
       {
         "name": "Extra Credit",
-        "description": "",
+        "description": "Multiplication Tutorial for Beginners",
         "link": "./pages/hw3/hw3-ec.html"
       }
     ]
@@ -45,6 +45,19 @@
   {
     "name": "Homework 4",
     "description": "",
+    "link": "./pages/TBA.html",
+    "parts": []
+  },
+  {
+    "name": "Homework 5",
+    "description": "",
+    "link": "./pages/TBA.html",
+    "parts": []
+  },
+  {
+    "name": "Homework 6",
+    "description": "",
+    "link": "./pages/TBA.html",
     "parts": []
   }
 ]
