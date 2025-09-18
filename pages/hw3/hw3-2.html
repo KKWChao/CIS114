@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../css/hw3/hw3.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script src="../../js/hw3/hw3-2.js"></script>
+  <script type="module" src="../../js/hw3/hw3-2.js"></script>
 </head>
 
 
@@ -59,9 +59,9 @@
     </div>
 
     <!-- MAIN SECTION -->
-    <div class="flex">
+    <div class="flex" id="sales-commision">
       <!-- INPUT FORM -->
-      <form id="commisions-form" onsubmit="calcCommisions(event)">
+      <form id="commisions-form">
         <h2>Commissions</h2>
         <!-- <p>
           <label for="seller-name">Seller's Name:</label>
@@ -71,19 +71,19 @@
         <ul class="list-decoration-none">
           <li>
             <label for="item-1">Item 1: </label>
-            <input type="number" name="item-1" id="item1">
+            <input type="number" min="0" step="1" name="item-1" id="item1" required>
           </li>
           <li>
             <label for="item-2">Item 2: </label>
-            <input type="number" name="item-2" id="item2">
+            <input type="number" name="item-2" id="item2" required>
           </li>
           <li>
             <label for="item-3">Item 3: </label>
-            <input type="number" name="item-3" id="item3">
+            <input type="number" name="item-3" id="item3" required>
           </li>
           <li>
             <label for="item-4">Item 4: </label>
-            <input type="number" name="item-4" id="item4">
+            <input type="number" name="item-4" id="item4" required>
           </li>
         </ul>
         <div>
@@ -143,6 +143,10 @@
           </tr>
         </tfoot>
       </table>
+
+    </div>
+    <div id="error-box">
+      Error box
     </div>
   </section>
 

@@ -19,6 +19,7 @@ input[type="reset"] {
   background-color: white;
 }
 
+input[type="number"],
 input[type="text"] {
   margin-top: 0.25em;
   padding: 0.5em 1em;
@@ -72,8 +73,16 @@ table {
 
 /* HW2 */
 
+#sales-commision {
+  padding-top: 4em;
+}
+
 .list-decoration-none > li {
   list-style: none;
+}
+
+input[type="number"]:invalid {
+  border: solid red 3px;
 }
 
 #commisions-form {
@@ -90,9 +99,11 @@ td {
   padding: 0.25em;
 }
 
-tbody {
-}
-
 .bold {
   font-weight: bold;
+}
+
+#error-box {
+  padding-top: 4em;
+  text-align: center;
 }
