@@ -15,6 +15,7 @@ let y;
 // EVENT LISTENERS
 beginButton.addEventListener("click", function () {
   learnMulti();
+  document.getElementById("userInput").style.display = "block";
 });
 
 form.addEventListener("submit", function (event) {
