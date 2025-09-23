@@ -71,7 +71,7 @@ table {
   font-weight: bolder;
 }
 
-/* HW2 */
+/* PART 2 */
 
 #sales-commision {
   padding-top: 4em;
@@ -105,5 +105,41 @@ td {
 
 #error-box {
   padding-top: 4em;
+  text-align: center;
+}
+
+/* EC */
+#learn-math {
+  position: relative;
+}
+
+#display {
+  height: 10em;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+#next-step {
+  text-align: center;
+}
+
+button {
+  padding: 0.5em 2em;
+  border-radius: 0;
+}
+
+#display-container {
+  width: 100%;
+}
+
+#hidden-continue {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#hint {
   text-align: center;
 }

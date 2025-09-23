@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../css/hw3/hw3.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script src="../../js/hw3/hw3-ec.js"></script>
+  <script type="module" src="../../js/hw3/hw3-ec.js"></script>
 </head>
 
 
@@ -44,11 +44,10 @@
 
       <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
-        <h2>Sales Commisions</h2>
+        <h2>Learn Mathematics</h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad molestiae exercitationem pariatur
-          dolorum porro ab quaerat nulla nemo! Quaerat odit iste id fugiat, praesentium atque maiores nam sed nesciunt!
+          An interactive educational tool designed to help elementary students practice multiplication.
         </p>
       </div>
 
@@ -58,6 +57,26 @@
         <a href="../../index.html" class="link-button link-button-effect">Home</a>
       </div>
     </div>
+
+    <!-- MAIN SECTION -->
+    <form id="learn-math" style="display: hidden">
+      <div id=" display-container">
+        <div id="display">
+          <button id="begin">Begin?</button>
+        </div>
+        <div id="next-step">
+        </div>
+      </div>
+      <div id="userInput">
+        <label for="input">Your Answer:</label>
+        <input type="number" id="input">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <div id="hidden-continue"></div>
+
+    <div id="hint"></div>
   </section>
 
   <footer>
