@@ -5,12 +5,12 @@
     "parts": [
       {
         "name": "Part 1",
-        "description": "Basic Operations - Styling",
+        "description": "Styling",
         "link": "./pages/hw2/hw2.html"
       },
       {
         "name": "Part 2",
-        "description": "Basic Operations - Math",
+        "description": "Math",
         "link": "./pages/hw2/hw2-2.html"
       },
       {
@@ -44,9 +44,25 @@
   },
   {
     "name": "Homework 4",
-    "description": "",
-    "link": "./pages/TBA.html",
-    "parts": []
+    "description": "Looping Statements",
+    "link": "./pages/hw4/index.html",
+    "parts": [
+      {
+        "name": "Part 1",
+        "description": "Lorem",
+        "link": "./pages/hw4/hw4-1.html"
+      },
+      {
+        "name": "Part 2",
+        "description": "Lorem",
+        "link": "./pages/hw4/hw4-2.html"
+      },
+      {
+        "name": "Extra Credit",
+        "description": "Lorem",
+        "link": "./pages/hw4/hw4-ec.html"
+      }
+    ]
   },
   {
     "name": "Homework 5",
