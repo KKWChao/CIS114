@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../css/hw4/hw4.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+  <script type="module" src="../../js/hw4/hw4-ec.js"></script>
 </head>
 
 <body>
@@ -56,6 +57,21 @@
       </div>
     </div>
 
+    <!-- MAIN SECTION -->
+    <div class="flex-column mt-2">
+      <form>
+        <label for="user-input">Enter a number:</label><br>
+        <input type="number" name="user-input" id="user-input">
+        <div class="button-box">
+          <input type="submit" value="Submit" id="submit-button">
+          <input type="reset" value="Reset" id="reset-button">
+        </div>
+      </form>
+
+      <div>
+        <pre id="result-box"></pre>
+      </div>
+    </div>
   </section>
 
   <footer>

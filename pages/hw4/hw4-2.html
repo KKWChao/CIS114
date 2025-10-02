@@ -42,12 +42,11 @@
 
       <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
-        <h2>Part 2</h2>
+        <h2>Learn Multiplication</h2>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aut excepturi, aperiam placeat dolor rerum
-          officia libero. Rerum explicabo necessitatibus architecto dolore aliquam minima, earum minus illo ipsum et
-          fuga!
+          officia libero.
         </p>
       </div>
 
@@ -58,7 +57,19 @@
     </div>
 
     <!-- MAIN SECTION -->
-    <div id="table-holder" class="flex-column mt-2">
+    <div id="table-holder" class="flex-column mt-2" onload="generateTable(5, 9)">
+
+    </div>
+
+    <div class="flex mt-2">
+      <h3>View different range?</h3>
+      <form>
+        <label for="" name="start">Start Value: </label><br>
+        <input type="number" name="start" id="start"> <input type="submit" value="Submit" id="submit">
+        <br>
+        <label for="" name="end">End Value: </label><br>
+        <input type="number" name="end" id="end"> <input type="reset" value="Reset" id="reset">
+      </form>
 
     </div>
 
