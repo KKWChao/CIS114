@@ -1,5 +1,36 @@
 /* PART 1 */
+#results {
+  margin-top: 4em;
+}
+
+.flex-column {
+  justify-content: center;
+  align-items: center;
+}
 
 /* PART 2 */
+.grey {
+  background-color: lightgray;
+  color: black;
+}
 
+.red {
+  background: darkred;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.w-full {
+  width: 50%;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.flex-column {
+}
 /* PART 3 */
