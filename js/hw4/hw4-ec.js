@@ -14,6 +14,7 @@ function onSubmit(event) {
     result.innerHTML = generatePattern(parseInt(user_input.value));
   } else {
     result.innerHTML = "The input value must be between (2 - 10)";
+    user_input.value = "";
   }
 }
 

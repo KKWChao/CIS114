@@ -49,17 +49,17 @@
     "parts": [
       {
         "name": "Part 1",
-        "description": "Lorem",
+        "description": "Product and Sum of Every Xth Integer",
         "link": "./pages/hw4/hw4-1.html"
       },
       {
         "name": "Part 2",
-        "description": "Lorem",
+        "description": "Learn Multiplication",
         "link": "./pages/hw4/hw4-2.html"
       },
       {
         "name": "Extra Credit",
-        "description": "Lorem",
+        "description": "Hollow Square",
         "link": "./pages/hw4/hw4-ec.html"
       }
     ]
