@@ -73,7 +73,7 @@ section {
   border-spacing: 0 0.5em;
 }
 
-thead th {
+#assignment-table > thead th {
   border-bottom: 0.15em dotted white;
   padding-bottom: 0.5em;
 }
@@ -222,7 +222,7 @@ footer {
 
 .flex {
   display: flex;
-  gap: 8em;
+  gap: 4em;
   justify-content: center;
   align-items: center;
 }
@@ -261,3 +261,5 @@ footer {
   padding: 2em;
   line-height: 3em;
 }
+
+/* SMALL SCREENS */

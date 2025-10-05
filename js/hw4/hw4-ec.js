@@ -27,7 +27,7 @@ reset.addEventListener("click", (event) => {
 function validateInput(input) {
   let check = parseInt(input.value);
 
-  return check > 2 && check < 10 && !isNaN(check) ? 0 : 1;
+  return check > 1 && check < 11 && !isNaN(check) ? 0 : 1;
 }
 
 // generating pattern
@@ -36,13 +36,12 @@ function generatePattern(num) {
   for (let i = 0; i < num; i++) {
     for (let j = 0; j < num; j++) {
       if (i == 0 || i == num - 1 || j == 0 || j == num - 1) {
-        str += " * ";
+        str += " *";
       } else {
-        str += "   ";
+        str += "  ";
       }
     }
     str += "<br>";
   }
-
   return str;
 }
