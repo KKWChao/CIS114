@@ -35,6 +35,7 @@ function generateTables(start, end) {
 
     let tableBody = `
         <table class="w-full">
+        <caption>${i} Multipliction Table</caption>
         <thead>
           <tr class="red">
             <th>Number</th>
