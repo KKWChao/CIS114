@@ -4,14 +4,6 @@
   display: flex;
 }
 
-form {
-  flex-basis: 20%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  align-items: center;
-}
-
 input[type="submit"],
 input[type="reset"] {
   padding: 0.4em 0.8em;
@@ -24,13 +16,12 @@ input[type="text"] {
   margin-top: 0.25em;
   padding: 0.5em 1em;
   text-align: center;
-  width: 40%;
+  width: 100%;
 }
 
 .form-buttons {
-  width: 60%;
   display: flex;
-  justify-content: space-around;
+  gap: 2em;
 }
 
 #hw-1-result {
@@ -57,7 +48,6 @@ table {
   align-items: center;
   margin-top: 4em;
   gap: 4em;
-  height: 50%;
 }
 
 #hw1-result {
@@ -111,6 +101,12 @@ td {
 /* EC */
 #learn-math {
   position: relative;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
 }
 
 #display {
@@ -146,4 +142,8 @@ button {
 
 #userInput {
   display: none;
+}
+
+#input {
+  width: 40%;
 }
