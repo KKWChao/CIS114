@@ -64,3 +64,7 @@ input[type="reset"] {
   width: 6em;
   border-radius: 0;
 }
+
+#result-box {
+  line-height: 1.1em;
+}
