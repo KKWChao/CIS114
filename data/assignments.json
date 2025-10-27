@@ -66,9 +66,20 @@
   },
   {
     "name": "Homework 5",
-    "description": "",
+    "description": "Lorem",
     "link": "./pages/TBA.html",
-    "parts": []
+    "parts": [
+      {
+        "name": "Part 1",
+        "description": "Lorem",
+        "link": "./pages/hw5/hw5-1.html"
+      },
+      {
+        "name": "Part 2",
+        "description": "Lorem",
+        "link": "./pages/hw5/hw5-2.html"
+      }
+    ]
   },
   {
     "name": "Homework 6",
