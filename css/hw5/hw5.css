@@ -19,9 +19,29 @@
 }
 
 fieldset {
-  padding: 1em
+  padding: 1em;
 }
 
 #result-div {
   padding: 2em;
+}
+
+/* PART 2 */
+#pt2-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 4em;
+  gap: 1em;
+}
+
+#pt2-form {
+  flex-basis: 50%;
+}
+
+input[type="text"],
+input[type="select"],
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.25em 0.5em;
 }

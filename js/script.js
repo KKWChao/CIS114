@@ -59,7 +59,7 @@ async function loadData() {
           <td>${part.description ? part.description : "TBA"}</td>
           <td>
             <a href="${part.link}" class="assignment-link">
-              View ${item.name} ${part.name} 
+              Go to ${part.name} 
             </a>
           </td>
         </tr>

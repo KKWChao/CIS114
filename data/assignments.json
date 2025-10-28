@@ -66,17 +66,17 @@
   },
   {
     "name": "Homework 5",
-    "description": "Lorem",
-    "link": "./pages/TBA.html",
+    "description": "Arrays",
+    "link": "./pages/hw5/index.html",
     "parts": [
       {
         "name": "Part 1",
-        "description": "Lorem",
+        "description": "User Form Input",
         "link": "./pages/hw5/hw5-1.html"
       },
       {
         "name": "Part 2",
-        "description": "Lorem",
+        "description": "State Search",
         "link": "./pages/hw5/hw5-2.html"
       }
     ]

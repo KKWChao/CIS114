@@ -28,7 +28,7 @@
     </div>
   </header>
 
-  <section class="pt1">
+  <section class="pt2">
     <!-- SECTION HEADER -->
 
     <div class="flex">
@@ -39,11 +39,9 @@
 
       <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
-        <h2>Ttile</h2>
-
+        <h2>State Search</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius autem fuga eum quidem. Asperiores nemo,
-          voluptate cum quaerat ea voluptatum ullam quis. Iusto reiciendis officiis exercitationem veniam odio quaerat!
+          A basic State search with validation
         </p>
       </div>
 
@@ -55,7 +53,22 @@
 
     <!-- MAIN PART -->
     <div id="pt2-div">
-     
+      <form action="" id="pt2-form">
+        <fieldset>
+          <legend>State</legend>
+          <input type="text" name="user-input"><br><br>
+          <p>(Please enter a state abbreviation or state name)</p>
+        </fieldset>
+        <fieldset>
+          <legend>Action</legend>
+          <input type="submit" value="Submit" id="submit-button">
+          <input type="reset" value="Reset" id="reset-button">
+        </fieldset>
+      </form>
+      <fieldset id="result-div">
+        <legend>Result</legend>
+        <div id="result-box" class=""></div>
+      </fieldset>
     </div>
 
   </section>
