@@ -58,36 +58,36 @@
         <fieldset class="">
           <legend>Full Name</legend>
           <label for="firstname">First Name: </label>
-          <input type="text" name="firstname"><br>
+          <input type="text" name="firstname" id="firstname"><br>
           <label for="lastname">Last Name:&nbsp;</label>
-          <input type="text" name="lastname"><br>
+          <input type="text" name="lastname"  id="lastname"><br>
         </fieldset>
 
         <fieldset class="">
           <legend>Age</legend>
           <label for="age-less21">Less than 21: </label>
-          <input type="radio" name="age" value="0"><br>
+          <input type="radio" name="age" value="0" id="age-less21"><br>
           <label for="age-betw21-50">Between 21 and 50: </label>
-          <input type="radio" name="age" value="1"><br>
+          <input type="radio" name="age" value="1" id="age-betw21-50"><br>
           <label for="age-more50">Older than 50: </label>
-          <input type="radio" name="age" value="2"><br>
+          <input type="radio" name="age" value="2" id="age-more50"><br>
         </fieldset>
 
         <fieldset class="">
           <legend>Browser</legend>
           <label for="cb-safari">Safari&nbsp;</label>
-          <input type="checkbox" name="cb-safari"><br>
+          <input type="checkbox" name="cb-safari" id="cb-safari"><br>
           <label for="cb-chrome">Chrome&nbsp;</label>
-          <input type="checkbox" name="cb-chrome"><br>
+          <input type="checkbox" name="cb-chrome" id="cb-chrome"><br>
           <label for="cb-firefox">Firefox</label>
-          <input type="checkbox" name="cb-firefox"><br>
+          <input type="checkbox" name="cb-firefox" id="cb-firefox"><br>
         </fieldset>
 
         <fieldset>
           <legend>Type of Movie</legend>
           <!-- <label for="select-movie">Type of Movie</label><br> -->
           <select name="select-movie" id="select-movie">
-            <option value="" selected></option>
+            <option value="" selected disabled hidden></option>
             <option value="action">Action</option>
             <option value="comedy">Comedy</option>
             <option value="drama">Drama</option>
