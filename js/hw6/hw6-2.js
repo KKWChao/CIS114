@@ -22,11 +22,15 @@ submit.addEventListener("click", (e) => {
       window.open(
         `./popup.html?char=${inputCh.value}`,
         "ErrorWindow",
-        "width=500, height=400"
+        "right=0, bottom=0, width=500, height=400"
       );
       result.innerHTML = "See Popup";
     } else {
-      result.innerHTML = `<p>The letter "${inputCh.value.toUpperCase()}" or "${inputCh.value.toLowerCase()}" appears ${count} times in your text.</p>`;
+      if (!isFinite(inputCh.value)) {
+        result.innerHTML = `<p>The character "${inputCh.value.toLowerCase()}" or "${inputCh.value.toUpperCase()}" appears ${count} times in your text.</p>`;
+      } else {
+        result.innerHTML = `<p>The character "${inputCh.value}" appears ${count} times in your text.</p>`;
+      }
     }
   } else {
     if (!inputTxt.value) {

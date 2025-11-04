@@ -19,6 +19,10 @@ input[type="text"] {
   padding: 0.25em 0.5em;
 }
 
+textarea {
+  width: 100%;
+}
+
 /* PT2 */
 #pt2-main {
   width: full;
