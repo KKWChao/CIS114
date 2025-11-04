@@ -83,8 +83,19 @@
   },
   {
     "name": "Homework 6",
-    "description": "",
-    "link": "./pages/TBA.html",
-    "parts": []
+    "description": "Objects",
+    "link": "./pages/hw6/index.html",
+    "parts": [
+      {
+        "name": "Part 1",
+        "description": "Lorem",
+        "link": "./pages/hw6/hw6-1.html"
+      },
+      {
+        "name": "Part 2",
+        "description": "Lorem",
+        "link": "./pages/hw6/hw6-2.html"
+      }
+    ]
   }
 ]

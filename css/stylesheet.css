@@ -74,8 +74,15 @@ section {
 }
 
 #assignment-table > thead th {
-  border-bottom: 0.15em dotted white;
-  padding-bottom: 0.5em;
+  font-size: large;
+}
+
+#main-hw-table {
+  padding: 2em;
+}
+
+#main-hw-legend {
+  font-size: x-large;
 }
 
 thead > tr {

@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="Homework5" content="Kelvin Chao's homework 5">
-  <title>Homework 5 Part 2</title>
-  <link rel="stylesheet" href="../../css/hw5/hw5.css">
+  <meta name="Homework5" content="Kelvin Chao's homework 6 part 1">
+  <title>Homework 6 Part 1</title>
+  <link rel="stylesheet" href="../../css/hw6/hw6.css">
   <link rel="stylesheet" href="../../css/stylesheet.css">
   <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
-  <script type="module" src="../../js/hw5/hw5-2.js"></script>
+  <script type="module" src="../../js/hw6/hw6-1.js"></script>
 </head>
 
 <body>
@@ -28,48 +28,53 @@
     </div>
   </header>
 
-  <section class="pt2">
+  <section class="pt1">
     <!-- SECTION HEADER -->
 
     <div class="flex">
       <!-- LEFT SECTION -->
       <div class="section-left">
-        <a href="./index.html" class="link-button link-button-effect">Homework 5</a>
+        <a href="./index.html" class="link-button link-button-effect">Homework 6</a>
       </div>
 
       <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
-        <h2>State Search</h2>
+        <h2>LOREM</h2>
+
         <p>
-          A basic State search with validation.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, delectus temporibus ipsa laudantium
+          necessitatibus itaque. Et distinctio quos itaque placeat a voluptatum! Nostrum nemo quae, deleniti recusandae
+          sapiente accusamus modi.
         </p>
       </div>
 
       <!-- RIGHT SECTION -->
       <div class="section-right">
-        <a href="../../index.html" class="link-button link-button-effect">Home</a>
+        <a href="./hw6-2.html" class="link-button link-button-effect">Part 2</a>
       </div>
     </div>
 
     <!-- MAIN PART -->
-    <div id="pt2-div">
-      <form id="pt2-form">
+    <div id="pt1-main">
+      <form id="pt1-form" class="main-half">
         <fieldset>
-          <legend>Search</legend>
-          <label for="user-input">State:</label><br>
-          <input type="text" name="user-input"><br><br>
-          <p>(Please enter a state abbreviation or state name)</p>
+          <legend>User Input</legend>
+          <label for="user-input">Enter a number with 4 decimals:</label><br>
+          <input type="text" name="user-input" id="user-input" required>
         </fieldset>
+        <br>
         <fieldset>
-          <legend>Action</legend>
-          <input type="submit" value="Submit" id="submit-button">
-          <input type="reset" value="Reset" id="reset-button">
+          <legend>Actions</legend>
+          <input type="submit" value="Submit" id="submit">
+          <input type="reset" value="Reset" id="reset">
         </fieldset>
       </form>
-      <fieldset id="result-div">
+
+      <fieldset class="main-half">
         <legend>Result</legend>
-        <div id="result-box" class=""></div>
+        <div id="result-box"></div>
       </fieldset>
+
     </div>
 
   </section>

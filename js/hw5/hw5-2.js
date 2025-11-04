@@ -7,6 +7,14 @@ const data = [
   ["CO", "Colorado", "Denver", 5957493],
 ];
 
+let dataState = "";
+
+for (const item of data) {
+  dataState += `${item[1]} `;
+}
+
+console.log(dataState);
+
 let form = document.getElementById("pt2-form");
 let submit = document.getElementById("submit-button");
 let reset = document.getElementById("reset-button");
@@ -54,5 +62,5 @@ function bruteForceMatch(input, version, result) {
   }
 
   if (!found)
-    result.innerHTML = `<p>Sorry, we do not have information about this state! We only have information about "${input}"</p>`;
+    result.innerHTML = `<p>Sorry, we do not have information about this state! We only have information about:</p><br><p>${dataState}</p>`;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Homework5" content="Kelvin Chao's homework error page">
+  <title>Homework Error</title>
+  <!-- <link rel="stylesheet" href="../../css/hw6/hw6.css"> -->
+  <link rel="stylesheet" href="../../css/stylesheet.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+</head>
+
+<body>
+  <header></header>
+  <section>
+    <h1>Search character "<span id="char"></span>" not found in the content you typed</h1>
+    <button onclick="closeWindow()">Close</button>
+  </section>
+</body>
+<script>
+  function closeWindow() {
+    window.close();
+  }
+  const param = new URLSearchParams(window.location.search)
+  console.log(param.get('char'))
+  let char = document.getElementById("char")
+  char.innerHTML = param.get('char')
+</script>
+
+</html>

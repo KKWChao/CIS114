@@ -1,0 +1,28 @@
+#pt1-main {
+  width: full;
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+}
+
+.main-half {
+  flex-basis: 50%;
+}
+
+fieldset {
+  padding: 1em;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="text"] {
+  padding: 0.25em 0.5em;
+}
+
+/* PT2 */
+#pt2-main {
+  width: full;
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+}
