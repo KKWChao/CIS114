@@ -24,6 +24,7 @@ DO NOT USE ALERT BOXES FOR ERROR MESSAGES OR RESULTS!!!
   - After the user types the number in the input box and clicks on the button to submit, you need to make sure that the number has AT LEAST 4 decimal positions (no less than that)
   - If the user types an invalid number, you will display an error message in the output/result area
   - If the user types a valid number (with 4 decimals and it is a number), you will use Math.round, Math.sqrt, Math.floor, toFixed() etc. to obtain the following:
+
     TIPS:
     when reading the input, make sure you will be using parseFloat() to not lose the decimal numbers before doing the calculations requested
     remember to use the toFixed() only at the time you will present the final result
@@ -32,6 +33,7 @@ DO NOT USE ALERT BOXES FOR ERROR MESSAGES OR RESULTS!!!
     round the floating-point number to the nearest tenths position
     round the floating-point number to the nearest hundredths position
     round the floating-point number to the nearest thousandths position
+
   - You will then present in the output/result area the original number typed by the user and the results you found for each calculation requested above
 
 ### For example:

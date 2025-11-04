@@ -88,12 +88,12 @@
     "parts": [
       {
         "name": "Part 1",
-        "description": "Lorem",
+        "description": "Floating Point Math",
         "link": "./pages/hw6/hw6-1.html"
       },
       {
         "name": "Part 2",
-        "description": "Lorem",
+        "description": "Text Search",
         "link": "./pages/hw6/hw6-2.html"
       }
     ]

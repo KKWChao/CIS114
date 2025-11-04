@@ -11,10 +11,14 @@
 </head>
 
 <body>
-  <header></header>
-  <section>
-    <h1>Search character "<span id="char"></span>" not found in the content you typed</h1>
-    <button onclick="closeWindow()">Close</button>
+  <header>
+    <div class="header-container">
+      <h1 class="header-title">Javascript Assignments</h1>
+    </div>
+  </header>
+  <section style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Search character "<span id="char-lower"></span>" or "<span id="char-upper"></span>" not found in the content you typed</h1>
+    <button onclick="closeWindow()" style="padding: 0.5em 0.75em; margin: 1em;">Close</button>
   </section>
 </body>
 <script>
@@ -23,8 +27,11 @@
   }
   const param = new URLSearchParams(window.location.search)
   console.log(param.get('char'))
-  let char = document.getElementById("char")
-  char.innerHTML = param.get('char')
+  let charLower = document.getElementById("char-lower")
+  let charUpper = document.getElementById("char-upper")
+
+  charLower.innerHTML = param.get('char')
+  charUpper.innerHTML = param.get('char').toUpperCase()
 </script>
 
 </html>

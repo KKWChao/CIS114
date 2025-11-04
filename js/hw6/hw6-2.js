@@ -24,6 +24,7 @@ submit.addEventListener("click", (e) => {
         "ErrorWindow",
         "width=500, height=400"
       );
+      result.innerHTML = "See Popup";
     } else {
       result.innerHTML = `<p>The letter "${inputCh.value.toUpperCase()}" or "${inputCh.value.toLowerCase()}" appears ${count} times in your text.</p>`;
     }
