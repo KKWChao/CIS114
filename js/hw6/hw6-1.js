@@ -28,19 +28,19 @@ submit.addEventListener("click", (e) => {
     )}</p>`;
 
     // C. Round to tenth
-    resultString += `<p>Rounded to the nearest 10th position = ${(
-      Math.round(inputP * 10) / 10
-    ).toPrecision(2)}</p>`;
+    resultString += `<p>Rounded to the nearest 10th position = ${inputP.toFixed(
+      1
+    )}</p>`;
 
     // D. Round to hundr
-    resultString += `<p>Rounded to the nearest 100th position = ${(
-      Math.round(inputP * 100) / 100
-    ).toPrecision(3)}</p>`;
+    resultString += `<p>Rounded to the nearest 100th position = ${inputP.toFixed(
+      2
+    )}</p>`;
 
     // E. Round to thou
-    resultString += `<p>Rounded to the nearest 1000th position = ${(
-      Math.round(inputP * 1000) / 1000
-    ).toPrecision(4)}</p>`;
+    resultString += `<p>Rounded to the nearest 1000th position = ${inputP.toFixed(
+      3
+    )}</p>`;
 
     result.innerHTML = resultString;
   } else {
