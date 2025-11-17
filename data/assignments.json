@@ -97,5 +97,28 @@
         "link": "./pages/hw6/hw6-2.html"
       }
     ]
+  },
+  {
+    "name": "Homework 7",
+    "description": "Object Model, Cookies",
+    "link": "./pages/hw7/index.html",
+    "parts": [
+      {
+        "name": "Part 1",
+        "description": "Lorem",
+        "link": "./pages/hw7/hw7-1.html"
+      },
+      {
+        "name": "Part 2",
+        "description": "Lorem",
+        "link": "./pages/hw7/hw7-2.html"
+      }
+    ]
+  },
+  {
+    "name": "Homework 8",
+    "description": "TBA",
+    "link": "./pages/TBA.html",
+    "parts": []
   }
 ]
