@@ -105,12 +105,12 @@
     "parts": [
       {
         "name": "Part 1",
-        "description": "Lorem",
+        "description": "Text Decoration",
         "link": "./pages/hw7/hw7-1.html"
       },
       {
         "name": "Part 2",
-        "description": "Lorem",
+        "description": "Cookies",
         "link": "./pages/hw7/hw7-2.html"
       }
     ]

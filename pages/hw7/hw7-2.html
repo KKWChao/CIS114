@@ -11,7 +11,7 @@
   <script type="module" src="../../js/hw7/hw7-2.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
   <header>
     <div class="header-container">
       <h1 class="header-title">Javascript Assignments</h1>
@@ -39,10 +39,10 @@
 
       <!-- SECTION TITLE AND DESCRIPTION -->
       <div class="section-center flex-column">
-        <h2>Title 2</h2>
+        <h2>Cookies</h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum minus? Tenetur doloremque, laboriosam accusantium eligendi recusandae sapiente dolorum architecto consectetur alias beatae? Distinctio ipsum ex itaque facilis exercitationem ab.
+          Gets a username and saves it to local storage, on return will display the username
         </p>
       </div>
 
@@ -54,7 +54,22 @@
 
     <!-- MAIN PART -->
     <div id="pt2-main">
-
+      <fieldset id="result-container">
+      </fieldset>
+      <form id="pt2-form">
+        <fieldset>
+          <legend>Cookie Creater</legend>
+          <label for="user-name">Username:</label><br>
+          <input type="text" name="user-name" id="user-name"><br><br>
+          <label for="user-full-name">Full Name:</label><br>
+          <input type="text" name="user-full-name" id="user-full-name">
+        </fieldset>
+        <fieldset>
+          <legend>Action</legend>
+          <input type="submit" value="Create Cookie" id="submit-button">
+          <input type="reset" value="Clear Form" id="reset-button">
+        </fieldset>
+      </form>
 
     </div>
 

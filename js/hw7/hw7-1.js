@@ -44,6 +44,6 @@ function styleBuilder(bg, fd, fs) {
     fd_bold: fd[0] ? "bold" : "normal",
     fd_underline: fd[1] ? "underline" : "none",
     fd_italic: fd[2] ? "italic" : "normal",
-    fontSize: fsMap[fs] || "12px",
+    fontSize: fsMap[fs] || "",
   };
 }

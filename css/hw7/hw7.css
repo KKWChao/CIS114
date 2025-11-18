@@ -25,3 +25,10 @@ fieldset {
 #result-div {
   padding: 2em;
 }
+
+/* PT2 */
+#pt2-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
