@@ -117,8 +117,8 @@
   },
   {
     "name": "Homework 8",
-    "description": "TBA",
-    "link": "./pages/TBA.html",
+    "description": "AJAX",
+    "link": "./pages/hw8/ajaxassignment.html",
     "parts": []
   }
 ]
