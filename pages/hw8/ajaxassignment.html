@@ -37,7 +37,7 @@
         <h2>Homework 8 - AJAX Application</h2>
 
         <p>
-          Real time styling updates
+          AJAX Explanation and REST API Report
         </p>
       </div>
 
@@ -50,44 +50,113 @@
 
     <!-- MAIN PART -->
     <div id="main">
-      
+
       <div>
         <button type="button" id="loadDocButton">Get CD collection</button>
         <br><br>
         <table id="demo"></table>
       </div>
 
-      <h2>Explanation of AJAX</h2>
-      <div class="xml-explaination">
+      <fieldset class="fieldset">
+        <legend>
+          <h2>Explanation of AJAX</h2>
+        </legend>
         <h3>function loadDoc()</h3>
         <p>
-          The loadDoc function creates the http request object using the new XMLHttpRequest() function and assigns it to the constant xhttp. 
-          Once it has loaded it then calls the myFunction() function and passes in the xhttp as a parameter. 
-          The open method is then called and the parameters "Get" and the name of the file "cd_catalog.xml" is passed in.
+          The loadDoc function creates the http request object using the new XMLHttpRequest() function and assigns it to
+          the constant xhttp.
+          Once it has loaded it then calls the myFunction() function and passes in the xhttp as a parameter.
+          The open method is then called and the parameters "Get" and the name of the file "cd_catalog.xml" is passed
+          in.
           The open method prepares the request and the .send() method executes the call.
         </p>
         <br>
         <h3>function myFunction(xml)</h3>
         <p>
-          This function takes the response from the get request and gets all elements with the tag name "CD" from the XML file.
-          It then creates the table with the data found from. The table header has 3 items and also has a for loop to 
-          populate the table with the data found. Finally, it inserts the data into the document that has "demo" for an id.
+          This function takes the response from the get request and gets all elements with the tag name "CD" from the
+          XML file.
+          It then creates the table with the data found from. The table header has 3 items and also has a for loop to
+          populate the table with the data found. Finally, it inserts the data into the document that has "demo" for an
+          id.
         </p>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>
+          <h2>OpenF1 API</h2>
+        </legend>
+        <div class="report-h">
+          <div>
+                    <p>Base URL: https://api.openf1.org/v1/</p>
+        <p>Return Type: JSON Object or CSV</p>
+          </div>
+          <a href="https://openf1.org/?ref=freepublicapis.com">Link to Docs</a>
+        </div>
         <br>
-        <hr>
+        <h3>Report</h3>
         <br>
-        <h2>REST API</h2>
-        <br>
-        <h2>The Metropolitan Meseum of Art Collection API</h2>
-        <a href="https://metmuseum.github.io/?ref=freepublicapis.com">Link to Docs</a>
-        <br>
-        <p>Base URL: https://collectionapi.metmuseum.org/public/collection/v1/objects/</p>
-        
+        <div>
+          <p>The OpenF1 Car Data API is an opensource API that provides real time data as well as historical data on
+            Formula 1. It provides a variety of data feeds from
+            car data, drivers, intervals, laps and more. Historical data is free to use and live data can be accessed
+            through a paid account. The endpoint are in JSON
+            or csv format making it easy to use with accessible URL endpoints. Paid access to the live feed could be
+            useful if a project required real time information.
+            However according to the site, some of the live data could be delayed by three seconds or more. The
+            historical data could be used for any sorts of race
+            analysis, race reproductions, or other projects. </p>
+          <br>
+          <p>The docs provide examples of access using shell, python, r and javascript showing ease of access. Looking
+            at the api, it provides many different endpoints
+            to use. The main API endpoints are Car Data, Drivers, Intervals, Laps, Location, Meetings, Pit, Position,
+            Race control, Sessions, Stints, Team Radio, and Weather.
+            Each endpoint has a comprehensive collection of information to utilize in specific projects or analysis.
+            Users can query the request by adding the parameter to
+            the url for example to fetch the driver number 55 with the session_key of 9149 the request could be done by
+            adding the base url of https://openf1.org/?ref=freepublicapis.com
+            followed by car_data? and the desired information for example: fetch("https://${base_url}/car_data?driver_number=55&session_key=9159"). 
+            The data is easy to process as it can be in either JSON or CSV format with easy filtering through the url.
+          </p>
+          <br>
+          <br>
+          <p>The free tier allows users to access the historal data and the paid tier allows for live data. Depending on
+            the needs of the project, determines which tier the
+            user would need. Data analysis projects would not require the live data but simulations or live feed
+            projects requires the paid tier. According to their site, cost is dependant on usage which could be very
+            expensive. Access is granted through OAuth 2.0 for authentication and websockets to transmit the data.
+            Currently, live data for some endpoints is not available due to changes on F1's side making it more
+            difficult
+            for opensource API's to access the data stream. If cost is a main concern, the free version would a good
+            choice,
+            and the paid version could be a cheaper option when comparing the official version, however it comes at the
+            constant
+            of reliability and delays.
+          </p>
+          <br>
+          <p>As this is an open-source service, it is primarily maintained by the community and could be subject to
+            change.
+            The API is well documented and is very user friendly, having examples and outputs make it a strong api for
+            projects to use. It also has new features in beta such as overtakes, session result, and starting grid
+            showing
+            that the API is actively maintained. A roadmap is available as well as user guidelines for contributions. 
+            I would recommend using this API for historical analysis of F1 but I would be cautious when using the live data
+            as it the project is not officially licensed by F1 and misuse of the data could lead to trouble. 
+          </p>
+
+
+        </div>
+      </fieldset>
+
+      <div class="xml-explaination">
+
+
+
+
 
       </div>
-      
+
     </div>
-    
+
 
   </section>
 

@@ -22,3 +22,12 @@ td {
 .xml-explaination {
   width: 70%;
 }
+
+.report-h {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fieldset {
+  padding: 2em;
+}
